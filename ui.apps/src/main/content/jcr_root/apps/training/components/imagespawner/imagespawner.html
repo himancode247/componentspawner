@@ -1,0 +1,12 @@
+<sly data-sly-use.model="com.axeno.core.models.ImageSpawnerModel"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+
+    <sly data-sly-call="${templates.placeholder @ isEmpty=!properties.imageCount}"></sly>
+
+    <div class="cmp-imagespawner" data-sly-list.index="${model.items}">
+        <div class="cmp-imagespawner__item" style="margin-bottom: 20px; border: 1px dashed #ccc; padding: 10px;">
+            <p>Image Reference #${indexList.count}</p>
+            <sly data-sly-resource="${'image_{0}' @ format=[index], resourceType='core/wcm/components/image/v2/image'}"></sly>
+        </div>
+    </div>
+</sly>
