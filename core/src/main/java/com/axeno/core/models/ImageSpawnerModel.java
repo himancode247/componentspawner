@@ -11,8 +11,6 @@ public class ImageSpawnerModel {
 
     @ValueMapValue(name = "imageCount")
     private int imageCount;
-
-    // Creates a simple list of integers (0, 1, 2...) based on imageCount
     public List<Integer> getItems() {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < imageCount; i++) {
