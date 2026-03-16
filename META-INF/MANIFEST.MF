@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Content-Package-Id: my_packages:components
+Content-Package-Roots: /apps/training/components,/apps/training/clientli
+ bs
+Content-Package-Type: application
+

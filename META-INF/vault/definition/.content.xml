@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0"
+    jcr:created="{Date}2026-02-20T12:36:03.315Z"
+    jcr:createdBy="admin"
+    jcr:description="\0"
+    jcr:lastModified="{Date}2026-02-20T12:36:03.315Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-2026.1.23963.20260108T001551Z"
+    group="my_packages"
+    lastUnwrapped="{Date}2026-02-20T12:36:03.315Z"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2026-02-20T12:36:03.315Z"
+    lastWrappedBy="admin"
+    name="components"
+    version="\0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/apps/training/components"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/apps/training/clientlibs"
+            rules="[]"/>
+    </filter>
+</jcr:root>

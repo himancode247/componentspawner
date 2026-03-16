@@ -1,0 +1,22 @@
+<div class="gallery-component">
+
+    <h2>My Gallery</h2>
+
+    <div class="gallery-grid"
+         data-sly-use.model="com.axeno.core.models.GalleryModel">
+
+        <div class="gallery-item"
+             data-sly-list.image="${model.images}">
+
+            <img src="${image.path}"
+                 alt="${image.title}" />
+
+            <h3>${image.title}</h3>
+
+            <p>${image.creationDate}</p>
+
+        </div>
+
+    </div>
+
+</div>

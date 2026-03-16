@@ -1,0 +1,15 @@
+<div class="userform-component">
+
+    <form class="userform-component__form" method="post">
+
+        <button type="submit"
+                class="userform-component__button">
+            
+            ${properties.text ? properties.text : 'Submit'}
+
+        </button>
+
+    </form>
+
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='training.CustomButton'}"/>

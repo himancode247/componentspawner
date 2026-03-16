@@ -1,0 +1,21 @@
+
+
+.userform-component__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:red;
+    padding: 20px;
+}
+
+.userform-component__form input {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.userform-component__form input:focus {
+    outline: none;
+    border-color: #0055ff;
+}
