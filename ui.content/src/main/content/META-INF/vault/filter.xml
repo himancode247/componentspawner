@@ -8,7 +8,5 @@
     </filter>
     <filter root="/content/dam/training/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/training" mode="merge"/>
-    <filter root="/conf/global/settings/workflow/models/ImageTitleMetadata"/>
-    <filter root="/conf/global/settings/workflow/launcher/config/ImageMetadataLauncher"/>
-    <filter root="/var/workflow/models/ImageTitleMetadata"/>
+    <filter root="/conf/global/settings/workflow/models/dam/cloud_post_processing" mode="merge"/>
 </workspaceFilter>
