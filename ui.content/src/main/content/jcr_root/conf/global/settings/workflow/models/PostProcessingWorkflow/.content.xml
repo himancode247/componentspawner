@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:designPath="/libs/settings/wcm/designs/default"
+            cq:lastModified="{Date}2026-04-20T13:08:38.745+05:30"
+            cq:lastModifiedBy="admin"
+            cq:template="/libs/cq/workflow/templates/model"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="PostProcessingModel"
+            sling:resourceType="cq/workflow/components/pages/model"
+            lastSynced="{Date}2026-04-20T13:09:08.316+05:30">
+        <flow
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+            <process
+                    jcr:created="{Date}2026-04-20T13:08:18.119+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2026-04-20T13:08:32.576+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Process"
+                    sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                        jcr:primaryType="nt:unstructured"
+                        PROCESS="com.axeno.core.workflow.GenerateDcTitleProcess"
+                        PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <damupdateassetworkfl
+                    jcr:created="{Date}2026-04-20T13:08:01.717+05:30"
+                    jcr:createdBy="admin"
+                    jcr:description="This process will send DamEvent.Type.DAM_UPDATE_ASSET_WORKFLOW_COMPLETED event when DAM update asset workflow is completed"
+                    jcr:lastModified="{Date}2026-04-20T13:08:01.717+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="DAM Update Asset Workflow Completed"
+                    sling:resourceType="dam/components/workflow/damupdateassetworkflowcompletedprocess">
+                <metaData
+                        jcr:primaryType="nt:unstructured"
+                        PROCESS="com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess"
+                        PROCESS_AUTO_ADVANCE="true"/>
+            </damupdateassetworkfl>
+        </flow>
+    </jcr:content>
+</jcr:root>
